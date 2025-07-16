@@ -24,6 +24,13 @@ const About: React.FC<AboutProps> = ({ isDark }) => {
     "Google Cloud",
     "Penetration Testing",
   ];
+  const achievements = [
+    "Over 1200 clients served",
+    "Hacktoberfest 2024 contributor",
+    "Bugs found in vmedulife, indian oil, hnhkart and other major open source projects",
+    "Research paper published in IEEE Xplore",
+    "EUREKA 2024 semi-finalist",
+  ];
 
   const interests = [
     { icon: Code, text: "Bug Huting" },
@@ -185,6 +192,27 @@ const About: React.FC<AboutProps> = ({ isDark }) => {
                 </li>
               ))}
             </ul>
+            <div className="pt-6">
+              <p
+                className={`leading-relaxed mb-2 ${
+                  isDark ? "text-slate-400" : "text-slate-600"
+                }`}
+              >
+                A few things I'm proud of:
+              </p>
+              <ul className="list-disc pl-5 space-y-2 text-sm">
+                {achievements.map((achievement, index) => (
+                  <li
+                    key={index}
+                    className={`${
+                      isDark ? "text-slate-400" : "text-slate-600"
+                    } hover:text-emerald-400 transition-colors duration-200`}
+                  >
+                    {achievement}
+                  </li>
+                ))}
+              </ul>
+            </div>
 
             <div className="pt-6">
               <p
