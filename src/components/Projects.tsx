@@ -230,31 +230,11 @@ const Projects: React.FC<ProjectsProps> = ({ isDark }) => {
                 }`}
               >
                 <div className="relative group">
-                  <div
-                    className={`absolute inset-0 rounded transition-all duration-300 ${
-                      hoveredProject === index
-                        ? "bg-transparent"
-                        : isDark
-                        ? "bg-emerald-400/20"
-                        : "bg-slate-400/20"
-                    }`}
-                  ></div>
                   <img
                     src={project.image}
                     alt={project.title}
-                    className={`rounded transition-all duration-300 ${
-                      hoveredProject === index
-                        ? "grayscale-0 scale-105"
-                        : "grayscale"
-                    }`}
+                    className="rounded transition-all duration-300 hover:scale-105"
                   />
-                  <div
-                    className={`absolute inset-0 rounded ${
-                      isDark
-                        ? "bg-gradient-to-t from-black/50 to-transparent"
-                        : "bg-gradient-to-t from-white/50 to-transparent"
-                    }`}
-                  ></div>
                 </div>
               </div>
 
