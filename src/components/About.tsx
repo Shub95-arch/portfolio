@@ -144,7 +144,7 @@ const About: React.FC<AboutProps> = ({ isDark }) => {
                     : "text-slate-800 hover:text-slate-900"
                 }`}
               >
-                {/* a huge corporation */}
+                {/* a huge corporatin */}
                 <span
                   className={`absolute -bottom-1 left-0 w-0 h-0.5 group-hover:w-full transition-all duration-300 ${
                     isDark ? "bg-emerald-400" : "bg-slate-800"
